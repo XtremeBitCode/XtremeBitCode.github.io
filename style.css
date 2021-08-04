@@ -1,0 +1,117 @@
+body{
+  margin: 0;
+  background-color: #1f2833;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1{
+  background-color: gainsboro;
+  margin-bottom: 0;   
+  margin-top: 0; 
+  padding: 14px 24px;
+  color: black;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  overflow: auto;
+  border: #1f2833;
+  
+
+}
+
+a{
+  float: left;
+  display: block;
+  padding: 15px 26px;
+  text-decoration: none;
+  color: white;
+
+}
+
+li a.active {
+  background-color: #04AA6D;
+}
+
+
+a:hover:not(.active){
+  background-color: #1f2833;
+}
+
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  color: black;
+  margin: 1px 100px 1px 100px;
+  padding: 2px;
+  
+}
+
+.flex-container > div{
+  background-color: #f1f1f1;
+  margin: 10px 0px 10px 30px;
+  padding: 10px;
+  font-size: 30px;
+  
+}
+
+.box {
+  float: left;
+  width:33.33%;
+  padding: 5px 3px 5px 2px;
+  margin: 0;
+  background-color: gainsboro;
+  text-align: center;
+
+}
+
+img {
+  float: left;
+  padding: 2px 1px 2px 1px;
+  
+}
+
+.flex-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 800px){
+  .flex-container{
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 700px){
+  h1{
+    text-align: center;
+  }
+  li{
+    border-bottom:1px solid #1f2833;
+
+  }
+  a{
+    text-align: center;
+    float: none;
+    
+    }
+
+.flex-container{
+  flex-direction: column;
+}    
+
+
+
+
+
+
